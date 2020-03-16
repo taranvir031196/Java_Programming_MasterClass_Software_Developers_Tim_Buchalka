@@ -10,6 +10,7 @@ public class Account {
 	
 	public void deposit(int deposit) {
 		this.balance = this.balance + deposit;
+		
 		System.out.println("Deposit of "+deposit+" made. Total balance is "+this.balance);
 	}
 	
