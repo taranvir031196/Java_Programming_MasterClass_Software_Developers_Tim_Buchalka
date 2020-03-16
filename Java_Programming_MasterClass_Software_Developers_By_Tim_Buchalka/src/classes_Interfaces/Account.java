@@ -17,11 +17,11 @@ public class Account {
 	public void withdrawl(double withdrawlAmount){
 		
 		if(this.balance-withdrawlAmount <= 0) {
-			System.out.println("The balance is"+this.balance+". Withdrawl cannot bw processed");
+			System.out.println("The balance is "+this.balance+". Withdrawl cannot bw processed");
 		}
 		else{
 			this.balance = this.balance - withdrawlAmount;
-			System.out.println("Withdrwal of amount"+withdrawlAmount+"processed. Hence the remaining balance is"+this.balance);		
+			System.out.println("Withdrwal of amount "+withdrawlAmount+" processed. Hence the remaining balance is "+this.balance);		
 		}
 	}
 	
@@ -31,7 +31,7 @@ public class Account {
 	
 	public String getCustomerName() {
 		
-		System.out.println("The name of the customer is"+ this.custName);
+		System.out.println("The name of the customer is "+ this.custName);
 		return this.custName;
 	}
 	
@@ -40,10 +40,16 @@ public class Account {
 	}
 	
 	public String getCustomerPhoneNo() {
+		System.out.println("The Phone Number of the customer is "+ this.custPhoneNumber);
 		return this.custPhoneNumber;
 	}
 	
 	public void setcustEmailAddress(String customerEmailAddress) {
 		this.custEmailAddress = customerEmailAddress;
+	}
+	
+	public String getcustEmailAddress() {
+		System.out.println("The Email address of the customer is "+ this.custEmailAddress);
+		return this.custEmailAddress;
 	}
 }

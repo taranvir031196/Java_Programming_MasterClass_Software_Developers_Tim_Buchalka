@@ -6,15 +6,19 @@ public class Main extends Account{
 		// TODO Auto-generated method stub
 		Account acc = new Account();
 		
-		System.out.println("---------Summary of the Transaction is------------------");
+		System.out.println("---------Summary of the Transaction of the Customer is---------------");
 		acc.deposit(1000);
 		acc.withdrawl(50);
 		
+		acc.setCustomerName("Taranvir Singh Saini");
+		acc.getCustomerName();
 		
+		acc.setCustomerPhoneNo("7986189262");
+		acc.getCustomerPhoneNo();
 		
+		acc.setcustEmailAddress("taranvir.554@gmail.com");
+		acc.getcustEmailAddress();
 		
-		
-
 	}
 
 }
