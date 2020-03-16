@@ -6,7 +6,7 @@ public class Main extends Account{
 		// TODO Auto-generated method stub
 		Account acc = new Account();
 		
-		System.out.println("---------Summary of the Transaction of the Customer is---------------");
+		System.out.println("-------------Summary of the Transaction of the Customer is---------------");
 		acc.deposit(1000);
 		acc.withdrawl(50);
 		
@@ -18,6 +18,9 @@ public class Main extends Account{
 		
 		acc.setcustEmailAddress("taranvir.554@gmail.com");
 		acc.getcustEmailAddress();
+		
+		System.out.println("-------------Summary of the Transaction of the Customer is---------------");
+		Account acc1 = new Account("12348747234824", "Taranvir", 89089458);
 		
 	}
 

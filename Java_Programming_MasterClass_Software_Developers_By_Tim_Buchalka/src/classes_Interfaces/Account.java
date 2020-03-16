@@ -8,6 +8,26 @@ public class Account {
 	private String custPhoneNumber;
 	private String custEmailAddress;
 	
+	public Account() {
+		this("7897291231231","Taran", 882421);
+		System.out.println("Empty Constructor called!:)");
+	}
+	
+	public Account(String number, String name,double balance) {
+		
+		System.out.println("The Constructor with the paraameters called!");
+		this.number = number;
+		this.custName = name;
+		this.balance = balance;
+		
+		getAccountNumber(this.number);
+	}
+	
+	public String getAccountNumber(String num) {
+		System.out.println("The Account Number is "+num);
+		return num;		
+	}
+	
 	public void deposit(int deposit) {
 		this.balance = this.balance + deposit;
 		
